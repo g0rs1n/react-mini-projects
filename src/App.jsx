@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import './app.css'
-import Weather from './Weather'
-
+import Products from './ProductsApi'
 
 
 function App () {
   return (
     <>
-      <Weather/>
+      <Products/>
     </>
   )
 }

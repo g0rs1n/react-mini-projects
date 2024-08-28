@@ -1,4 +1,4 @@
-import { useReducer, useContext, useState } from "react"
+import { useReducer, useContext, useState, useEffect } from "react"
 import { ListsContext, ListsDispatchContext, listsReducer, 
         newListsReducer, NewListsContext, NewListsDispatchContext
 } from "./reducers/reducerTodo"
@@ -32,6 +32,10 @@ function ListProvider ({children}) {
             type: 'clear_newList'
         })
     }
+
+    useEffect(()=>{
+        console.log("Welcome to ToDo List")
+    },[])
 
     return (
         <>
