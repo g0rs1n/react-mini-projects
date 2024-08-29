@@ -27,6 +27,7 @@ export default function Products () {
             <div className="wrapper">
                 {
                     button ? <button onClick={handleButton}>Welcome to test API, click me to start</button> :
+                    items.length === 0 ? <h2>Loading...</h2> :
                     items.map(item=>{
                         return (
                             <Item
