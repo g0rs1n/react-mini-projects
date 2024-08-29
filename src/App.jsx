@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './app.css'
-import Products from './ProductsApi'
+import Cats from './CatsApi'
 
 
 function App () {
   return (
     <>
-      <Products/>
+      <Cats/>
     </>
   )
 }
