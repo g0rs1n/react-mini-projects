@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './app.css'
-import Cats from './CatsApi'
-
+import { BrowserRouter } from 'react-router-dom'
+import Paginations from './Paginations'
 
 function App () {
   return (
     <>
-      <Cats/>
+    <BrowserRouter>
+      <Paginations/>
+    </BrowserRouter>   
     </>
   )
 }
