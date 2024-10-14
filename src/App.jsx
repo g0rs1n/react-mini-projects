@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './app.css'
 import { BrowserRouter } from 'react-router-dom'
-import Paginations from './Paginations'
+import Tabs from './Tabs2'
 
 function App () {
   return (
     <>
     <BrowserRouter>
-      <Paginations/>
+      <Tabs/>
     </BrowserRouter>   
     </>
   )
